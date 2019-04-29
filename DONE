@@ -1,0 +1,21 @@
+import java.util.*;
+public class TryWork {
+
+	public static void main(String[] args) {
+	    
+		try {
+		 Scanner scanner = new Scanner(System.in);
+		 System.out.println("Math Grade:");
+		 float a= scanner.nextInt();
+		if(a/100>1)
+				throw new IndexOutOfBoundsException("TOO BIG");
+		if(a/100<0.01)
+				throw new IndexOutOfBoundsException("TOO SMALL");
+		}
+		catch(IndexOutOfBoundsException e) {
+			System.out.println("成績應為0~100");
+		}
+		catch(Exception e) {
+			System.out.println("格式錯誤");
+		}
+	}
