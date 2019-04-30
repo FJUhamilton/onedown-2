@@ -9,10 +9,12 @@ public static void main(String[] args) {
 		 Scanner scanner = new Scanner(System.in);
 		 System.out.println("Math Grade:");
 		 float a= scanner.nextInt();
+		
 		if(a/100>1)
 				throw new IndexOutOfBoundsException("TOO BIG");
-		if(a/100<0.01)
+		if(a/100<0)
 				throw new IndexOutOfBoundsException("TOO SMALL");
+		
 		map.put(0, a);
 		}
 		catch(IndexOutOfBoundsException e) {
@@ -27,7 +29,7 @@ public static void main(String[] args) {
 			 float b= scanner.nextInt();
 			if(b/100>1)
 					throw new IndexOutOfBoundsException("TOO BIG");
-			if(b/100<0.01)
+			if(b/100<0)
 					throw new IndexOutOfBoundsException("TOO SMALL");
 			map.put(1, b);
 			float c = (map.get(0)+ map.get(1))/2 ;
