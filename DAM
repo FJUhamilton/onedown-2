@@ -19,9 +19,11 @@ public static void main(String[] args) {
 		}
 		catch(IndexOutOfBoundsException e) {
 			System.out.println("成績應為0~100");
+			return;
 		}
 		catch(Exception e) {
 			System.out.println("格式錯誤");
+			return;
 		}
 		try {
 			 Scanner scanner = new Scanner(System.in);
@@ -37,9 +39,11 @@ public static void main(String[] args) {
 			}
 			catch(IndexOutOfBoundsException e) {
 				System.out.println("成績應為0~100");
+				return;
 			}
 			catch(Exception e) {
 				System.out.println("格式錯誤");
+				
 			}
 		
 	}
